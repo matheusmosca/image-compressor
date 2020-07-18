@@ -1,10 +1,14 @@
 import React from 'react';
+import './globalConfig.scss';
 
-import './base.scss';
+import DropZoneArea from './components/DropZoneArea';
+import DropZoneProvider from './Contexts/DropZoneContext';
 
 function App() {
   return (
-   <div>Hello world</div>
+    <DropZoneProvider>
+      <DropZoneArea />  
+    </DropZoneProvider>
   );
 }
 
